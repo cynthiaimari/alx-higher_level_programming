@@ -1,5 +1,7 @@
--- maximum temperature of each state
-SELECT `state`, max(value) as `maximum_temperature`
-FROM `temperatures`
-GROUP BY `state`
-ORDER BY `state`;
+-- display max tempretature of each state
+-- order by statename
+
+SELECT state, MAX(value) AS max_temp
+FROM temperatures
+GROUP BY state
+ORDER BY state;
